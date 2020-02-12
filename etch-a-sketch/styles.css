@@ -1,0 +1,17 @@
+body {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    font-family: sans-serif;
+}
+
+#gridContainer {
+    display: flex;
+    width: 500px;
+    height: 500px;
+    margin: 20px;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
