@@ -6,6 +6,7 @@
 const MOVES = ["rock", "paper", "scissors"]
 
 const resultDisplay = document.querySelector('#result-display');
+const gameOverDisplay = document.querySelector('#game-over-display');
 
 function getRandInt(num) {
     // returns random number between 0 (inclusive) and num (exclusive)
@@ -68,6 +69,7 @@ const compuerScoreDisplay = document.querySelector('#computer-score');
 const buttons = document.querySelectorAll('.move-button');
 buttons.forEach(button => {
     button.addEventListener("click", function () {
+        gameOverDisplay.textContent = "";
 
         let result = playRound(this.id, getComputerMove())
 
@@ -86,9 +88,9 @@ buttons.forEach(button => {
             updateScores();
 
             if (playerScore > computerScore) {
-                resultDisplay.textContent += "GAME OVER! YOU WIN!";
+                gameOverDisplay.textContent = "GAME OVER! YOU WIN!";
             } else {
-                resultDisplay.textContent += "GAME OVER! YOU LOSE!";
+                gameOverDisplay.textContent = "GAME OVER! YOU LOSE!";
             }
 
             // reset game

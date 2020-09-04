@@ -78,3 +78,12 @@ body {
     font-family: 'Roboto', sans-serif;
     font-size: 20px;
 }
+
+#game-over-display {
+    display: flex;
+    justify-items: center;
+    justify-content: center;
+    color: #fcfefe;
+    font-family: 'Roboto', sans-serif;
+    font-size: 20px;
+}
