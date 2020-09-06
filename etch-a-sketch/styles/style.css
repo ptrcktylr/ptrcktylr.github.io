@@ -1,0 +1,41 @@
+html {
+    background-color: #2e3e50;
+}
+
+body {
+    font-family: 'Bebas Neue', cursive;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+}
+
+#heading {
+    display: flex;
+    flex-direction: column;
+    color: #fcfefe;
+}
+
+#heading #title {
+    font-size: 60px;
+    margin: 20px 0 0 0;
+}
+
+#heading #description {
+    font-size: 25px;
+}
+
+
+.reset {
+    margin: 0 5px 0 5px;
+}
+
+#gridContainer {
+    width: 500px;
+    height: 500px;
+    background-color: #fcfefe;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin: 20px;
+}
