@@ -6,6 +6,11 @@ function getRandomRGB() {
     return [getRandomInt(256), getRandomInt(256), getRandomInt(256)];
 }
 
+function validInput(input) {
+    let regex = /^([1-9]|[1-5]{1}[0-9]{1}|6[0-4])$/;
+    return regex.test(input);
+}
+
 const gridContainer = document.querySelector('#gridContainer');
 let color = getRandomRGB();
 
@@ -35,7 +40,7 @@ function setUpGrid(grid_size) {
 }
 
 function getGridSize() {
-    while (inputSize < 1 || inputSize > 64 || typeof parseInt(inputSize) === NaN) {
+    while (!validInput(inputSize)) {
         inputSize = prompt("Enter a new size for the NxN sketchpad (1-64)");  
     }
 }
