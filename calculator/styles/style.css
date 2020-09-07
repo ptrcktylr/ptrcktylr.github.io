@@ -1,0 +1,93 @@
+html {
+    background-color: #AFB7BA;
+}
+
+body {
+    text-align: center;
+}
+
+h1 {
+    font-size: 65px;
+    font-family: 'Bebas Neue', cursive;
+}
+
+#calculator {
+    margin: auto;
+    width: 336px;
+    padding: 15px;
+    border-radius: 15px;
+    background-color: #1C1C1C;
+}
+
+#calc-grid {
+    display: grid;
+    justify-content: center;
+    align-content: center;
+    grid-template-columns: repeat(4, 75px);
+    grid-template-rows: minmax(120px, auto) repeat(5, 75px);
+    grid-column-gap: 10px;
+    grid-row-gap: 10px;
+}
+
+
+.span-two {
+    grid-column: span 2;
+    background-color: #505050;
+    color: white;
+}
+
+#display {
+    font-family: 'Roboto Mono', monospace;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: space-around; 
+    grid-column: span 4;
+    background-color: beige;
+    border-radius: 10px;
+    padding: 10px;
+    word-break: break-all;
+}
+
+#result {
+    font-size: 2.5rem;
+}
+
+#formula {
+    font-size: 1.1rem;
+}
+
+button {
+    border-radius: 10px;
+    border: none;
+    font-family: 'Roboto Mono', monospace;
+    font-size: 28px;
+    transition: all .1s ease-in-out;
+    cursor: pointer;
+}
+
+button:hover {
+    transform: scale(1.1);
+}
+
+button:active {
+    transform: scale(1.03);
+}
+
+button:focus {
+    outline: 0px;
+}
+
+.op-btn, #equal{
+    background-color: #FF9500;
+    color: white;
+}
+
+.num-btn, #decimal {
+    background-color: #505050;
+    color: white;
+}
+
+.sys-btn, #negate {
+    background-color: #D4D4D2;
+}
