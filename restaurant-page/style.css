@@ -1,0 +1,360 @@
+@import url('https://fonts.googleapis.com/css2?family=Heebo:wght@100;200;300;400;500;600;700;800;900&family=IBM+Plex+Sans+Condensed:wght@400;500&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body,
+h1,
+h2,
+h3,
+p {
+  margin: 0;
+}
+
+#left_nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#logo {
+  font-family: "Heebo", sans-serif;
+  font-size: 23px;
+  font-weight: 900;
+  letter-spacing: 1px;
+  max-height: 60px;
+  color: #188212;
+  padding-left: 15px;
+}
+
+#right_nav {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  font-family: "Heebo", sans-serif;
+  font-weight: 600;
+  font-size: min(2.5vw, 15px);
+}
+
+#right_nav > * {
+  padding: 12px;
+  transition: all 900ms cubic-bezier(.23,1,.32,1);
+}
+
+#right_nav > *:hover {
+  cursor: pointer;
+  text-decoration: underline;
+  color: #188212;
+}
+
+nav {
+  width: auto;
+  height: 60px;
+  border-bottom: 1px solid rgb(191, 191, 191);
+  background-color: white;
+  display: flex;
+  justify-content: space-between;
+  text-transform: uppercase;
+}
+
+main#home {
+  width: auto;
+  height: calc(100vh - 100px);
+
+  display: grid;
+  grid-template-columns: 1.3fr 0.7fr;
+  grid-template-rows: 1fr 1fr;
+  gap: 4px 4px;
+  grid-template-areas:
+    "left-panel top-right-panel"
+    "left-panel bot-right-panel";
+}
+
+#left-panel {
+  grid-area: left-panel;
+  background:linear-gradient(0deg, #188212c2, #188212c2), url(/dist/images/burger-background.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#left-panel p {
+  font-family: "Heebo", sans-serif;
+  font-weight: 900;
+  letter-spacing: 1px;
+  font-size: 6vw;
+  color: white;
+  text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.500);
+}
+
+#left-panel p#top, #left-panel p#bot {
+  font-family: 'IBM Plex Sans Condensed', sans-serif;
+  font-weight: 300;
+  font-size: 4vw;
+}
+
+#top-right-panel {
+  grid-area: top-right-panel;
+  background: url(/dist/images/futuristic-farming.jpeg);
+  background-size: cover;
+  background-repeat: no-repeat;
+
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+}
+
+#top-right-panel-header {
+  margin: 20px;
+  padding: 20px;
+  background-color: white;
+  color: #188212;
+  font-size: 1.5vw;
+  font-weight: 800;
+  font-family: "Heebo", sans-serif;
+  text-transform: uppercase;
+  box-shadow: 5px 5px black;
+}
+
+#bot-right-panel {
+  grid-area: bot-right-panel;
+  background: url(dist/images/done-delivery.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+  text-transform: uppercase;
+
+  font-size: 3vw;
+  font-family: "Heebo", sans-serif;
+  font-weight: 900;
+  color: white;
+}
+
+#bot-right-panel > * {
+  text-shadow: 3px 3px #188212, 6px 6px black;
+}
+
+#bot-right-header {
+  border: 8px dashed white;
+  border-radius: 5px;
+  padding: 15px;
+  margin-bottom: 20px;
+}
+
+footer {
+  width: auto;
+  height: 40px;
+  border-top: 1px solid rgb(191, 191, 191);
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  font-family: "Heebo", sans-serif;
+  letter-spacing: 1px;
+  font-size: 12px;
+}
+
+#copyright {
+  padding-left: 30px;
+}
+
+#footer-links {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-right: 30px;
+}
+
+#footer-links > * {
+  padding-inline: 10px;
+}
+
+main#menu {
+  width: auto;
+}
+
+.food-item-container {
+  width: 100%;
+  height: 150px;
+  display: flex;
+}
+
+.food-image {
+  width: 50%;
+  height: 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.food-description {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  font-size: min(4vw, 40px);
+  font-family: "Heebo", sans-serif;
+  text-transform: uppercase;
+  font-weight: 700;
+  width: 50%;
+  color: black;
+  text-shadow: 1px 1px #188212;
+}
+
+#item-0-image {
+  background-image: url(/dist/images/bacon.png);
+}
+#item-0-description::after {
+  content: "bacon burger";
+}
+
+#item-1-image {
+  background-image: url(/dist/images/pickle.png);
+}
+#item-1-description::after {
+  content: "pickle burger";
+}
+#item-2-image {
+  background-image: url(/dist/images/jalapeno.png);
+}
+#item-2-description::after {
+  content: "jalapeño burger";
+}
+#item-3-image {
+  background-image: url(/dist/images/burguesa.png);
+}
+#item-3-description::after {
+  content: "la burguesa";
+}
+#item-4-image {
+  background-image: url(/dist/images/shrimp.png);
+}
+#item-4-description::after {
+  content: "shrimp burger";
+}
+#item-5-image {
+  background-image: url(/dist/images/bacon_shrimp.png);
+}
+#item-5-description::after {
+  content: "bacon & shrimp burger";
+}
+#item-6-image {
+  background-image: url(/dist/images/plantain.png);
+}
+#item-6-description::after {
+  content: "plantain burger";
+}
+#item-7-image {
+  background-image: url(/dist/images/PLT.png);
+}
+#item-7-description::after {
+  content: "the plt";
+}
+#item-8-image {
+  background-image: url(/dist/images/buffalo_chicken.png);
+}
+#item-8-description::after {
+  content: "buffalo chicken burger";
+}
+#item-9-image {
+  background-image: url(/dist/images/crispy_shrimp.png);
+}
+#item-9-description::after {
+  content: "crispy shrimp";
+}
+#item-10-image {
+  background-image: url(/dist/images/philly_cheesesteak.png);
+}
+#item-10-description::after {
+  content: "philly cheasesteak";
+}
+#item-11-image {
+  background-image: url(/dist/images/bratwurst_sandwich.png);
+}
+#item-11-description::after {
+  content: "bratwurst sandwich";
+}
+
+main#about {
+  height: calc(100vh - 100px);
+
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  padding-top: 50px;
+
+  text-align: center;
+}
+
+h1#header {
+  font-family: "Heebo", sans-serif;
+  font-size: min(8vw, 40px);
+  font-weight: 800;
+  color: white;
+  text-shadow: 3px 3px #188212, 6px 6px black;
+  border-radius: 10px;
+  background-color: black;
+  padding: 5px;
+  margin-inline: 5px;
+  margin-bottom: 10px;
+}
+
+p#choose-us {
+  font-family: "Heebo", sans-serif;
+  font-size: min(4vw, 20px);
+  padding: 30px;
+  color: white;
+  background-color: #188212;
+  border-radius: 10px;
+  margin-inline: 5px;
+}
+
+@media (max-width: 900px) {
+  main#home {
+  width: auto;
+  height: calc(100vh - 100px);
+
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  gap: 4px 4px;
+  grid-template-areas:
+    "left-panel"
+    "top-right-panel"
+    "bot-right-panel";
+  }
+
+  #top-right-panel-header, #bot-right-header {
+    font-size: 4vw;
+  }
+
+  #footer-links {
+    display: none;
+  }
+}
+
+  @media (min-width: 899px) {
+    main#menu {
+      height: calc(100vh - 100px);
+    }
+    #menu_container {
+      padding-top: 10px;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+      gap: 0px 0px;
+    }
+  }
