@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To Do List</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"
+      integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w=="
+      crossorigin="anonymous" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet"
+      integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+  </head>
+
+  <body>
+
+    <main id="main_container">
+      <nav class="nav bg-primary">
+        <a class="branding" href="#">
+          <img src="./images/note.png" alt="" height="30" class="d-inline-block align-top me-2">
+          To Do
+        </a>
+        <!-- <div class="signed_in d-flex">
+          <span class="user_info d-flex align-items-center me-3">email@example.com</span>
+          <button id="sign_out_button" class="btn btn-outline-light rounded-pill">Sign Out</button>
+        </div> -->
+      </nav>
+
+
+      <!-- <div class="sidebar category_title">
+        <div class="sidebar_tabs">
+          <div class="home_tab">Home</div>
+          <div class="today_tab">Today</div>
+          <div class="week_tab">Week</div>
+          <div class="projects_tab">
+            <div class="projects_header">Projects</div>
+            <div class="projects_list project_title">
+              <div id="Work">
+                <div class="project_task_count">1</div>
+                <div class="project_name">Work</div>
+              </div>
+              <div id="Studies">
+                <div class="project_task_count">3</div>
+                <div class="project_name">Studies</div>
+              </div>
+              <div id="Chores">
+                <div class="project_task_count">5</div>
+                <div class="project_name">Chores</div>
+              </div>
+              <div id="Shopping">
+                <div class="project_task_count">1</div>
+                <div class="project_name">Shopping</div>
+              </div>
+              <div id="Uncategorized">
+                <div class="project_task_count">4</div>
+                <div class="project_name">Uncategorized</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div> -->
+
+      <div class="task_list_display">
+        <div class="task_list_heading d-flex justify-content-between align-items-center px-3">
+          <div class="category_title">Home</div>
+          <div class="date_title_container d-flex align-items-center">
+            <div class="due_date_title date_title pe-2">Due Date</div> <!-- due date after: descending/ascending icon -->
+            <i id="descending_button" class="fas fa-angle-double-down pe-2"></i>
+            <i id="ascending_button" class="fas fa-angle-double-up pe-5"></i>
+          </div>
+        </div>
+
+        <div class="tasks_container">
+          <div id="task_list">
+          </div>
+
+          <div id="add-task-button">
+          </div>
+        </div>
+
+      </div>
+
+    </main>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0" crossorigin="anonymous"></script>
+    <script src="main.js"></script>
+  </body>
+</html>
