@@ -6,4 +6,4 @@ From The Odin Project's curriculum.
 
 [Try it Out!](https://ptrcktylr.github.io/rock-paper-scissors/)
 
-![preview](/images/preview.png)
+![preview](ptrcktylr.github.io/rock-paper-scissors/images/preview.png)
